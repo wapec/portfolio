@@ -1,20 +1,98 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="header">
+  <div class="inner">
+    <div class="behind">
+      <div class="left-side"></div>
+      <div class="right-side"></div>
+      <img src="../assets/images/circles-above.png" alt="" class="rings above">
+      <img src="../assets/images/circles-below.png" alt="" class="rings below">
+    </div>
+    <div class="wrapper">
+      <div class="center">
+        <div class="left-side">
+          <h2 class="name">Erik</h2>
+          <h4 class="text-beneath-name">Personal</h4>
+        </div>
+        <div class="right-side">
+          <h2 class="name">Olsson</h2>
+          <h4 class="text-beneath-name">Portfolio</h4>
+          <h5 class="scroll-down">Scroll down to view my works</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
+<div class="content">
+  <div class="inner">
+    <div class="wrapper">
+      <section class="introduction-block">
+        <p class="text">Hello. I'm Erik Olsson 23 years old <span class="with-bg">Graphic Designer</span> specialize in <span class="with-bg">mobile apps</span> from Munich, Germany.</p>
+      </section>
+      <section class="work-block row">
+        <div class="bg"></div>
+        <div class="swiper col-lg-6">
+          <swiper [config]="config">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/images/screenshot-1.png" alt="" class="screenshot">
+              </div>
+              <div class="swiper-slide"><img src="../assets/images/screenshot-1.png" alt="" class="screenshot">
+              </div>
+              <div class="swiper-slide"><img src="../assets/images/screenshot-1.png" alt="" class="screenshot">
+              </div>
+            </div>
+          </swiper>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="info col-lg-6">
+          <h3 class="title">Just 6ix weeks</h3>
+          <p class="explanation">Just 6ix Weeks is a fitness app PSD template.<br>Just 6ix Weeks looks sleek, modern and has fully editable<br>6 screens ready to use for your next design project.</p>
+        </div>
+      </section>
+      <section class="work-block row">
+        <div class="bg"></div>
+        <div class="swiper col-lg-6 col-lg-push-6">
+          <swiper [config]="config">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/images/screenshot-2.png" alt="" class="screenshot">
+              </div>
+              <div class="swiper-slide"><img src="../assets/images/screenshot-2.png" alt="" class="screenshot">
+              </div>
+              <div class="swiper-slide"><img src="../assets/images/screenshot-2.png" alt="" class="screenshot">
+              </div>
+            </div>
+          </swiper>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="info col-lg-6 col-lg-pull-6">
+          <h3 class="title">Ventas UI Kit</h3>
+          <p class="explanation">Ventas is designed for travel magazines and readers to share their experience. This UI Kit with 6 fully customizable screens </p>
+        </div>
+      </section>
+      <section class="work-block row">
+        <div class="bg"></div>
+        <div class="swiper col-lg-6">
+          <swiper [config]="config">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/images/screenshot-3.png" alt="" class="screenshot">
+              </div>
+              <div class="swiper-slide"><img src="../assets/images/screenshot-3.png" alt="" class="screenshot">
+              </div>
+              <div class="swiper-slide"><img src="../assets/images/screenshot-3.png" alt="" class="screenshot">
+              </div>
+            </div>
+          </swiper>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="info col-lg-6">
+          <h3 class="title">Faumail</h3>
+          <p class="explanation">Faumail is a clean looking mobile UI kit for mail app design including high quality 6 screens. This incredible design theme can help you create great looking mobile app.</p>
+        </div>
+      </section>
+    </div>
+    <section class="view-more-block">
+      <a href="#">
+        <h1 class="view-more-text">View more projects</h1>
+      </a>
+    </section>
+  </div>
+</div>
